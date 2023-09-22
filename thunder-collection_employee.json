@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "employee",
+    "dateExported": "2023-09-22T13:59:39.581Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a4f1c10e-0139-480d-9ca2-fe06189bba50",
+            "colId": "a64b1fb5-3121-4de2-bb4f-53eb5371ad63",
+            "containerId": "",
+            "name": "Get All Employee",
+            "url": "http://localhost:3000/employees/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-09-22T13:40:32.383Z",
+            "modified": "2023-09-22T13:40:43.145Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b7d3175c-9310-465a-82a6-d4adb604e55f",
+            "colId": "a64b1fb5-3121-4de2-bb4f-53eb5371ad63",
+            "containerId": "",
+            "name": "Get one Employee by id",
+            "url": "http://localhost:3000/employees/3",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-09-22T13:43:45.493Z",
+            "modified": "2023-09-22T13:59:01.224Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2827624d-133f-4cbb-ae56-b58d13b18e0b",
+            "colId": "a64b1fb5-3121-4de2-bb4f-53eb5371ad63",
+            "containerId": "",
+            "name": "Create New Empoyee",
+            "url": "http://localhost:3000/employees/1",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-09-22T13:41:07.119Z",
+            "modified": "2023-09-22T13:44:05.506Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\r\n      \r\n      \"name\": \"suraj\",\r\n      \"age\": 12,\r\n      \"department\": \"node.js\"\r\n} ",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6ce29073-8536-46a1-b1e1-407951c083e5",
+            "colId": "a64b1fb5-3121-4de2-bb4f-53eb5371ad63",
+            "containerId": "",
+            "name": "Update Empoyee by id",
+            "url": "http://localhost:3000/employees/1",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-09-22T13:42:23.574Z",
+            "modified": "2023-09-22T13:43:03.545Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n      \n      \"name\": \"raju\",\n      \"age\": 12,\n      \"department\": \"node.js\"\n} ",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4e9ba102-03ca-4f1e-9441-87d531ca56aa",
+            "colId": "a64b1fb5-3121-4de2-bb4f-53eb5371ad63",
+            "containerId": "",
+            "name": "Delete one Employee by id",
+            "url": "http://localhost:3000/employees/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-09-22T13:44:13.671Z",
+            "modified": "2023-09-22T13:45:10.091Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

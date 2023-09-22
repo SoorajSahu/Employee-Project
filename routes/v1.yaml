@@ -1,0 +1,74 @@
+openapi: 3.0.0
+info:
+  title: Employee API
+  description: API for managing employees
+  version: 1.0.0
+paths:
+  /employees:
+    get:
+      summary: Get a list of all employees
+      responses:
+        '200':
+          description: Successful response
+    post:
+      summary: Create or update an employee by ID
+      requestBody:
+        description: Employee data to create or update
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Employee'
+      responses:
+        '200':
+          description: Successful response
+  /employees/{id}:
+    get:
+      summary: Get an employee by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: ID of the employee
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+    put:
+      summary: Update an employee by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: ID of the employee
+          schema:
+            type: integer
+      requestBody:
+        description: Employee data to update
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Employee'
+      responses:
+        '200':
+          description: Successful response
+components:
+  schemas:
+    Employee:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        age:
+          type: integer
+        department:
+          type: string
+      example:
+        id: 2
+        name: suraj
+        age: 12
+        department: node.js
